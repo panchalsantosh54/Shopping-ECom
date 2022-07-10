@@ -1,0 +1,268 @@
+:root {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  body {
+    background-color: gainsboro;
+  }
+  * {
+    margin: 0;
+    border: 0;
+  }
+   
+  html{
+    font-size: 100%;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  .App h1 {
+    background: linear-gradient(150deg, #f00505, #292524); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .items-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+
+ .items-container-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+ }
+ 
+  .actual-item{
+    width: 25%;
+    padding: 2rem;
+  }
+  .Item {
+   
+    width: 100%;
+    height: 31rem;
+    border-radius: 0.5rem;
+    overflow: inherit;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    box-shadow: 0px 13px 10px -7px rgb(71 27 27 / 10%);
+
+  }
+
+  .Item .item-div1{
+ 
+    width: 100%;
+    height: 20rem;
+    margin-top: 1.5rem;
+  }
+  
+    .Item .item-div1 img{ 
+    
+    width: 100%;
+    height: 85%;
+    border-radius: 4px;
+    object-fit: fill;
+  }
+
+    .Item .item-div2{
+   
+    height: 7rem;
+    width: 100%;
+    margin-top: -2rem;
+    color: rgb(4, 51, 138);
+    margin-bottom: 2rem;
+    
+  } 
+
+
+    .Item .item-div3{
+    padding: 13px 24px 14px 4px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-top: -4rem;
+ 
+  }
+  .Item .item-div3 h3
+  {
+    display: inline-block;
+    font-size: inherit;
+  }
+
+  .Cart-div {
+    float: right;
+    display: inline;
+    margin-top: -2rem;
+    background-color: #f00505;
+  }
+  .Cart-div img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .Cart-div h2 {
+    width: 1rem;
+    height: 2rem;
+    margin-block-end: -7px;
+    margin-inline-start: 12px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .MainBill{
+    margin: 10rem 2rem 2rem 2rem;
+    display: -webkit-inline-box;
+  }
+
+  .MainBill table,
+  tr,
+  th,
+  td {
+    border: 0.1rem solid black;
+  }
+
+ 
+
+  .ListOfItems-Main {
+   
+    height: 100%;
+    margin: 8rem 2rem 2rem 15rem;
+  }
+ 
+  nav {
+    background-color: rgb(3, 37, 109);
+    color: white;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .link {
+    color: white;
+    padding: 0.6rem;
+    font-size: 3vh;
+    font-style: none;
+    text-decoration: none;
+    display: inline;
+  }
+  .link:hover {
+    background: linear-gradient(150deg, #059669, #292524);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .AddSub {
+    margin-top: 0rem;
+    height: 0rem;
+    margin-bottom: 2rem;
+    width: max-content;
+    display: inline-block;
+  }
+  #WishlistBtn{
+    margin-top: 1rem;
+    font-size: inherit;
+    border-radius: 0.5rem;
+    background-color: darkseagreen;
+    padding: 5px;
+    border: 1px solid #059669;
+  }
+  .AddSub button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #059669;
+    background-color: transparent;
+    font-size: 1.25rem;
+  }
+  .AddSub button:hover {
+    background-color: #10b981;
+  }
+  .Wishlits-main ul {
+    list-style: none;
+    margin: 5rem 2rem 2rem 2rem;
+    width: 25%;
+    display: inline-block;
+  }
+  .Wishlits-main ul li {
+    display: inline-block;
+  }
+ 
+
+  .main-Sidebar{
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    width: 37vh;
+    height: 80%;
+    overflow-y: scroll;
+    border-right: 1px solid var(--light-grey);
+    background-color: rgb(80, 6, 67);
+  }
+  .flex-container{
+      display: flex;
+      flex-direction: column;
+  }
+  .Filter-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+ }
+ .Filter-sort{
+   padding: 1rem 1rem;
+ }
+ .Filter-header button{
+    background-color: transparent;
+ }
+ .price-header{
+    justify-content: space-between;
+ }
+  .Horizontal-wrapper{
+    border: 0.2px solid rgb(125, 187, 10); 
+    padding: 1rem;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-row {
+    display: flex;
+    align-items: center;
+    margin-top: 0.6rem;
+  }
+  .Price-slider{
+      width: 10rem;
+      height: 2rem;
+  }
+  .PriceList{
+    list-style: none;
+  }
+  .wrap{
+      flex-wrap: wrap;
+  }
+  @media only screen and (max-width:500px) { 
+      html{
+          font-size: 60%;
+      } 
+      .main-Sidebar{
+        width: 20vh;
+        height: 88vh;
+      }
+      .link {
+     
+        font-size: 2vh;
+      
+      }
+    }
